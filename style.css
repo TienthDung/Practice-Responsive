@@ -79,3 +79,28 @@ body {
         height: 130px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo, .nav-links {
+        width: 100%;
+        height: 60px;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 100px;
+    }
+
+    .hero-section {
+        height: 150px;
+        font-size: 18px;
+    }
+}
