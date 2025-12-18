@@ -1,4 +1,3 @@
-/* Thiết lập chung */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Header: Logo màu xanh, Menu màu cam */
 .navbar {
     display: flex;
     gap: 10px;
@@ -20,7 +18,7 @@ body {
 
 .logo {
     flex: 1;
-    background-color: #4fc3f7; /* Xanh dương */
+    background-color: #4fc3f7; 
     height: 80px;
     display: flex;
     align-items: center;
@@ -29,16 +27,15 @@ body {
 
 .nav-links {
     flex: 2;
-    background-color: #ffb74d; /* Cam nhạt */
+    background-color: #ffb74d;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Hero Section: Màu cam đậm */
 .hero-section {
-    background-color: #ff8a65; /* Cam đậm */
+    background-color: #ff8a65; 
     height: 250px;
     margin-bottom: 10px;
     display: flex;
@@ -48,7 +45,6 @@ body {
     color: white;
 }
 
-/* Content Grid: 3 cột màu vàng */
 .content-grid {
     display: flex;
     flex-wrap: wrap; /* Tự động xuống dòng khi thiếu chỗ */
@@ -57,15 +53,14 @@ body {
 
 .card {
     flex: 1;
-    min-width: 200px; /* Khi thu nhỏ đến 200px sẽ tự nhảy dòng */
-    background-color: #ffd54f; /* Vàng */
+    min-width: 200px;
+    background-color: #ffd54f; 
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Footer: Màu hồng (như trong hình Tablet) */
 .footer {
     background-color: #f8bbd0;
     height: 60px;
@@ -73,24 +68,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* --- Xử lý Responsive cho Mobile --- */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column; /* Xếp chồng Logo và Menu */
-    }
-    
-    .logo, .nav-links {
-        width: 100%;
-        height: 50px;
-    }
-
-    .content-grid {
-        flex-direction: column; /* Xếp chồng 3 thẻ vàng */
-    }
-
-    .hero-section {
-        height: 150px;
-    }
 }
