@@ -47,7 +47,7 @@ body {
 
 .content-grid {
     display: flex;
-    flex-wrap: wrap; /* Tự động xuống dòng khi thiếu chỗ */
+    flex-wrap: wrap; 
     gap: 10px;
 }
 
@@ -68,4 +68,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        height: 200px;
+    }
+
+    .card {
+        height: 130px;
+    }
 }
